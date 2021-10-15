@@ -1,6 +1,6 @@
 import { Container, ContentInput } from "./style"
 
-export const Input = ({icon: Icon, label, register, ...rest }) => {
+export const Input = ({icon: Icon, label, register, error, placeholder, ...rest }) => {
     
     return (
         <Container>
@@ -8,7 +8,7 @@ export const Input = ({icon: Icon, label, register, ...rest }) => {
             {Icon && <Icon/>}
             
             <ContentInput>
-                <input {...rest} {...register} />
+                <input {...rest} {...register}  placeholder={!!error ? error : placeholder}/>
             </ContentInput>
         </Container>
     )

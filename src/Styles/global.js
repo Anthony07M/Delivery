@@ -17,6 +17,13 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     button{
+        background: var(--Main-Orange-Primary);
+        color: var(--Main-White);
+        width: 10rem;
+        height: 2rem;
+        font-size: 1rem;
+        font-weight: bold;
+        border-radius: 15px;
         cursor: pointer;
         border: none;
     }
